@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Sections from "./components/Sections/Sections"
+import MainPage from "./pages/MainPage/MainPage";
+import ShoesPage from "./pages/ShoesPage/ShoesPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Loafers from "./pages/ShoesPage/LoafersPage/Loafers";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Sections />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="shoes">
+          <Route index={true} element={<ShoesPage />} />
+          <Route path="loafers" element={<Loafers />} />
+        </Route>
+        <Route path="/*" element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

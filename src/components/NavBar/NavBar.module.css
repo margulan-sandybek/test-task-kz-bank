@@ -1,0 +1,57 @@
+.wrapper {
+    background-color: #ccc;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtersHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.filtersReset {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(117, 70, 4);
+}
+
+.appliedFilters {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    color: rgb(11, 17, 190);
+}
+
+.row {
+    border: 1px solid black;
+    margin-bottom: 1px;
+}
+
+.collapsableRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.rowContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding-left: 10px;
+    align-items: flex-start;
+}
+
+.rowContentUnit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(11, 17, 190);
+}

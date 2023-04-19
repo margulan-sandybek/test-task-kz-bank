@@ -1,0 +1,71 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px 0px 40px;
+    margin-bottom: 30px;
+}
+
+.flag {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0.5px solid;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.currency {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.firstChoice {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+}
+
+.navLink {
+    position: relative;
+    color: #777777;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #333333;
+}
+
+.navLink:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: #333333;
+    transition: width 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.navLink:hover:before {
+    width: 100%;
+}
+

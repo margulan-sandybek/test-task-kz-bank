@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  border: none;
+  background-color: white;
+  color: #777777;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination button .icon {
+  font-size: 12px;
+  color: #777777;
+}
+
+.pagination button.active {
+  color: #333333;
+  border-bottom: 1.5px solid #777777;
+}
+
+.pagination button span {
+  display: inline-block;
+}

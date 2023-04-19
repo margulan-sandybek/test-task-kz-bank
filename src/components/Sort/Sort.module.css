@@ -1,0 +1,10 @@
+.sort {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
